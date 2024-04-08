@@ -1,7 +1,7 @@
 import { data } from "../data";
 import { StyledServicos } from "./styledServicos";
 import { adicionarServico } from '../adicionarServico'; 
-import {Helmet} from 'react.helmet'
+import {Helmet} from 'react-helmet'
 export function Servicos(){
 
     return(
