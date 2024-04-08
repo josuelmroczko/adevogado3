@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyledApresentacao, StyledTopo } from "./styleTopo";
 import { data } from "../data";
-
+ import {Helmet} from 'react-helmet'
 export default function Topo() {
     const [topoVisible, setTopoVisible] = useState(false);
     const [apresentacaoVisible, setApresentacaoVisible] = useState(false);
@@ -36,7 +36,8 @@ export default function Topo() {
 
     return (
         <>
-            <StyledTopo className={topoVisible && scrollPosition === 0 ? 'visible' : ''}>
+            <StyledTopo className={topoVisible && scrollPosition === 0 ? 'visible' : ''}>.
+     
                 <ul>
                     <li><a href={data.topoMenu.linkInstagran} target="_blank" rel='noopener noreferrer'><img src={data.topoMenu.imagemInsta} alt="logoinstagran" /></a></li>
                     <li><a href={data.topoMenu.linkLinkedin} target="_blank" rel='noopener noreferrer'><img src={data.topoMenu.imagemLinkedin} alt="logoLinkedin" /></a></li>
@@ -44,6 +45,11 @@ export default function Topo() {
                     <li><a href={data.topoMenu.linkfacebook} target="_blank" rel='noopener noreferrer'><img src={data.topoMenu.imagemfacebook} alt="logoFacebook" /></a></li>
                 </ul>
                 <ul>
+                    <Helmet>
+                        <title>{data.topoMenu.nomeTopo}</title>
+                        <meta name='description' content={data.topoMenu.textoPrincipalDaEmpresa} />
+                        <meta name='keywords' content={data.topoMenu.texto}/>
+                    </Helmet>
                     <li><h3>{data.topoMenu.nomeTopo}</h3></li>
                     <li><a href={`tel:${data.topoMenu.telefone}`}> {data.topoMenu.telefone}</a></li>
                 </ul>

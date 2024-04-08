@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { data } from "../data";
 export const StyleFooter = styled.footer`
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +7,8 @@ export const StyleFooter = styled.footer`
     -webkit-box-shadow: 0px 0px 8px 2px #000000;
   -moz-box-shadow: 0px 0px 8px 2px #000000;
   box-shadow: 0px 0px 8px 2px #000000;
+  background-color:${data.topoMenu.corFundoOpcoesTopo};
+
 `;
 
 export const Footersection = styled.div`
@@ -15,8 +17,8 @@ export const Footersection = styled.div`
     padding: 20px;
     max-width: 300px; /* Define a largura máxima */
     font-weight: bold;
-    line-height: 30px;
-    font-size: 18px;
+    line-height: 20px;
+    font-size: 15px;
    a{
     color: black;
 

@@ -1,57 +1,36 @@
 import { data } from "../data";
 import { StyledServicos } from "./styledServicos";
-
-
+import { adicionarServico } from '../adicionarServico'; 
+import {Helmet} from 'react.helmet'
 export function Servicos(){
+
     return(
         <StyledServicos>
             <a id="servicos"></a>
              <div className="content">
+             <Helmet>
+                        <title>{data.servicos.servico}</title>
+                        <meta name='description' content={data.servicos.titulo} />
+                        <meta name='keywords' content={data.servicos.texto}/>
+                    </Helmet>
                 <span>{data.servicos.servico}</span>
                 <h2>{data.servicos.titulo}</h2>
                 <p>{data.servicos.texto}</p>
             </div>
          
             <ul>
-                <li>
-                    <img src={data.servicos.tributaria.imagemTributaria} alt="imagem Tributaria" />
-                    <h2>{data.servicos.tributaria.tributaria}</h2>
-                    <p>{data.servicos.tributaria.texto}</p>
+                {adicionarServico.map((produto,index)=>(
+                 <li key={index}>
+                    <img 
+                    src={produto.imagem}
+                    alt={`Imagem ${index}`}
+                    className="imagem-produto"
+                    />
+                    <h2>{produto.nome} </h2>
+                    <p>{produto.texto} </p>
                 </li>
-
-                <li>
-
-                    <img src={data.servicos.empresarial.imagemempresarial} alt="imagemem presarial" />
-                <h2>{data.servicos.empresarial.empresarial}</h2>
-                    <p>{data.servicos.empresarial.texto}</p>
-                </li>
-
-                <li>
-                    <img src={data.servicos.administrativo.imagemadministrativo} alt="" />
-                <h2>{data.servicos.administrativo.administrativo}</h2>
-                    <p>{data.servicos.administrativo.texto}</p>
-                </li>
-
-                <li>
-                    <img src={data.servicos.civil.imagemTributaria} alt="imagem Tributaria" />
-                    <h2>{data.servicos.servico}</h2>
-                    <p>{data.servicos.civil.texto}</p>
-                </li>
-
-                <li>
-                    <img src={data.servicos.famíliaESucessões.imagemTributaria} alt="" />
-                <h2>{data.servicos.famíliaESucessões.famíliaESucessões}</h2>
-                    <p>{data.servicos.famíliaESucessões.texto}</p>
-                </li>
-
-                <li>
-                    <img src={data.servicos.trabalhista.imagemtrabalhista} alt="" />
-                <h2>{data.servicos.trabalhista.trabalhista}</h2>
-                    <p>{data.servicos.trabalhista.texto}</p>
-                </li>
-
+                ))}
             </ul> 
-
         </StyledServicos>
     )
 }

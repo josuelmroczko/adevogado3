@@ -9,9 +9,7 @@ import imagemYoutube from '../public/imagem/youtube.svg';
 import imagemTributario from '../public/imagem/tributario.png'
 import imagemtrabalhista from '../public/imagem/trabalhista.png'
 import imagemcivil from '../public/imagem/civil.png'
-import imagemempresarial from '../public/imagem/empresarial.png'
-import imagemequipe from '../public/imagem/equipe.png'
-import imagemfamilia from '../public/imagem/familia.png'
+ 
 
 import adv1foto from '../public/imagem/adv1.jpg'
 import adv2foto from '../public/imagem/adv2.jpg'
@@ -73,43 +71,22 @@ export const data = {
         corFundoOpcoesDeServicos:'rgba(139, 69, 19, 0.8)',
         corTextos:'rgba(250, 250, 250, 1)',
 
-        tributaria:{
-            imagemTributaria:imagemTributario,
-            tributaria:'Penal',
-            texto:'Defesa criminal em processos de todos os tipos, incluindo crimes contra a pessoa, patrimônio, honra, entre outros.',
-        },
-        empresarial:{
-            imagemempresarial:imagemempresarial,
-            empresarial:'Processo Criminal',
-            texto:'Assistência legal em todas as fases do processo criminal, desde o inquérito policial até recursos em instâncias superiores.',
-        },
-        administrativo:{
-            imagemadministrativo:imagemequipe,
-            administrativo:'Direito Penal Econômico',
-            texto:'Defesa em crimes financeiros, tributários, contra a ordem econômica e relacionados ao mercado de capitais.',
-        },
- 
-
-
-        civil:{
-            imagemTributaria:imagemcivil,
-            civil:'Civis',
-            texto:'Consultoria em questões civis, contencioso administrativo e judicial, elaboração de pareceres e defesa em processos penais civis relacionados a dívidas.',
-
-        },
-        famíliaESucessões:{
-            imagemTributaria:imagemfamilia,
-            famíliaESucessões:'Familiares e Sucessórias',
-            texto:'Assistência em inventário, planejamento sucessório, testamentos, divórcios, guarda de filhos e questões alimentares relacionadas a dívidas.',
-            
-        },
-        trabalhista:{
-            imagemtrabalhista:imagemtrabalhista,
-            trabalhista:'Trabalhistas',
-            texto:'Consultoria trabalhista, contencioso judicial, defesas administrativas, questões penais e financeiras trabalhistas, além de questões eleitorais relacionadas a dívidas.',
-            
-        },
-      
+        servico1: {
+            imagem: imagemTributario,
+            nome: 'Penal',
+            descricao:'Defesa criminal em processos de todos os tipos, incluindo crimes contra a pessoa, patrimônio, honra, entre outros.',
+          },
+          servico2: {
+            imagem:imagemtrabalhista,
+            nome: 'Processo Criminal',
+            descricao:'Assistência legal em todas as fases do processo criminal, desde o inquérito policial até recursos em instâncias superiores.',
+          },
+          servico3: {
+            imagem: imagemcivil,
+            nome: 'Direito Penal Econômico',
+            descricao:'Defesa em crimes financeiros, tributários, contra a ordem econômica e relacionados ao mercado de capitais.',
+          },
+          
     },
 
 

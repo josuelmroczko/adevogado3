@@ -6,7 +6,7 @@ export const StyledSobretexto = styled.div`
  z-index: 5;
   width: 50%;
   padding: 30px;
-color: ${data.sobreNos.corparagrafo};
+   color: ${data.sobreNos.corparagrafo};
   span {
     font-size: 2rem;
     font-weight: 100;
