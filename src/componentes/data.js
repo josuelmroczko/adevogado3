@@ -68,7 +68,7 @@ export const data = {
         titulo:'PRINCIPAIS ÁREAS DE ATUAÇÃO EM DEFESA PENAL',
         texto:'Conheça mais sobre as principais áreas de atuação da nossa advocacia especializada em defesa penal',
         corH2:'rgba(250, 250, 250, 1)',
-        corFundoOpcoesDeServicos:'rgba(139, 69, 19, 0.8)',
+        corFundoOpcoesDeServicos:'rgba( 64, 45, 10, 0.8)',
         corTextos:'rgba(250, 250, 250, 1)',
 
         servico1: {

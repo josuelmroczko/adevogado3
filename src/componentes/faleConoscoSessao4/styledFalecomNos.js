@@ -7,6 +7,8 @@ export const StyledDiv = styled.div`
   text-align: center;
   width: 100%;
   padding-bottom: 100px;
+  background-color: ${data.topoMenu.corFundoOpcoesTopo};
+  margin-bottom:30px ;
   .contatos-container {
     text-align: start;
     padding-top: 50px;
@@ -58,15 +60,19 @@ export const StyledDiv = styled.div`
     padding-top: 20px;
     align-items: center;
     border-bottom: solid 1px black;
+    border-radius:0 0 10px 10px;
   }
 
   .button {
     padding-bottom: 15px;
     border: none;
     cursor: pointer;
+    transition: 1s;
   }
   .button:hover {
     background-color: #696969;
+    padding: 10px;
+    transition: 1s;
   }
 
   /* Media query para telas menores que 768px (móveis) */
